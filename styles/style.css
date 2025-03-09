@@ -1,0 +1,167 @@
+.header {
+    background-color: #093035;
+    display: flex;
+    justify-content: center;
+    padding: 0 160px;
+}
+
+.header__content {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__shedule {
+    color: #F9ECC2;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-family: cursive;
+}
+
+.header__social {
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+}
+
+.social-icon {
+    fill: #F9ECC2;
+    height: 32px;
+    width: 32px;
+}
+
+.social-icon:hover {
+    fill: rgb(224, 185, 78);
+}
+
+/* Настройки основного контента */
+
+.main { 
+    max-width: 1440px;
+    min-height: 2622px;
+    margin: 0 auto;
+}
+
+/* Настройка картинки фоном */
+.main-wrapper {
+    background-image: url(/img/snacks-catering-decorative-stone\ \(1\)\ 2.jpg);
+    background-repeat: no-repeat;
+}
+
+
+/* Блок навигации */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 190px 20px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__link {
+    color: #EDDFD3;
+    font-size: px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: Noto;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    color: rgb(224, 185, 78);
+}
+
+
+/* Заголовки  */
+.pre-title {
+    display: flex;
+    justify-content: center;
+    color: #EDDFD3;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-right: 30px;
+}
+
+.title {
+    color: #D3B486;
+    margin: 5px 60px 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 1.4px;
+    font-family: "Noto";
+}
+
+/* Настройка кнопок */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 520px;
+}
+
+.central-button {
+    font-family: "Noto";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    width: 280px;
+    height: 50px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-bgc-fill {
+    color: #093035;
+    background-color: #D3B486;
+}
+
+.btn-bgc-fill:hover {
+    color: #D3B486;
+    border: 2px solid #D3B486;
+    background-color: transparent;
+}
+
+.btn-bgc-transp {
+    color: #D3B486;
+    border: 2px solid #D3B486;
+    background-color: transparent;
+}
+
+.btn-bgc-transp:hover {
+    color: #093035;
+    background-color: #D3B486;
+}
+
+/* секция меню */
+.menu {
+
+}
+
+.menu__title {
+    color: #D3B486;
+    font-size: 48px;
+    line-height: 52px;
+    font-family: "Noto";
+    font-weight: 600;
+}
