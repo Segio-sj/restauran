@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Итальянский ресторан</title>
-    <link rel="stylesheet" href="/fonts/fonts.css">
-    <link rel="stylesheet" href="/styles/global.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="page">
     <header class="header">
       <div class="header__content">
-        <span class="header__shedule"
+        <span class="shedule"
           >Понедельник - Четверг: 11:30 - 23:00 | Пятница & Воскресенье: 11:30 - 00:00</span
         > 
         <ul class="header__social">
@@ -48,7 +48,7 @@
               <li class="nav__list-item"><a class="nav__link" href="">О нас</a></li>
           </ul>
           <div class="logo">
-            <img src="/img/Logo.svg" alt="Partow Foods Restaurant">
+            <img src="./img/Logo.svg" alt="Partow Foods Restaurant">
           </div>
             <ul class="nav__list">
               <li class="nav__list-item"><a class="nav__link" href="">События</a></li>
@@ -59,27 +59,92 @@
         <span class="pre-title">Свежие ингредиенты со всех уголков мира</span>
       <h1 class="title">Дом итальянской кухни</h1>
       <div class="hero-buttons">
-        <a href=""><button class="central-button btn-bgc-fill">Забронировать</button></a>
-        <a href=""><button class="central-button btn-bgc-transp">Наши контакты</button></a>
+        <a href=""><button class="button main-btn btn-bgc-fill">Забронировать</button></a>
+        <a href=""><button class="button main-btn btn-bgc-transp">Наши контакты</button></a>
       </div>
       <section class="menu">
         <h2 class="menu__title">Посмотрите наше меню</h2>
         <div class="menu__list">
-          <a href=""><div class="menu__item">
-            <h3 class="menu_item-title Appetizers-item">Закуски</h3>
+          <a target="_blank" href="https://sakhalin-moscow.ru/wp-content/uploads/Sakhalin_Main_16.05.24_RU_финал.pdf"><div class="menu__item appetizers-item">
+            <h3 class="menu_item-title">Закуски</h3>
           </div></a>
-          <a href=""><div class="menu__item">
-            <h3 class="menu_item-title Main-courses-item">Основные блюда</h3>
+          <a target="_blank" href="https://sakhalin-moscow.ru/wp-content/uploads/Sakhalin_Main_16.05.24_RU_финал.pdf"><div class="menu__item main-courses-item">
+            <h3 class="menu_item-title">Основные блюда</h3>
           </div></a>
-          <a href=""><div class="menu__item">
-            <h3 class="menu_item-title Drinks-itms">Напитки</h3>
+          <a target="_blank" href="https://sakhalin-moscow.ru/wp-content/uploads/Sakhalin_Main_16.05.24_RU_финал.pdf"><div class="menu__item drinks-itms">
+            <h3 class="menu_item-title">Напитки</h3>
           </div></a>
-          <a href=""><div class="menu__item">
-            <h3 class="menu_item-title Desert-item">Десерты</h3>
+          <a target="_blank" href="https://sakhalin-moscow.ru/wp-content/uploads/2023/07/Sakhalin_deserts_17.05.24_RU_финал.pdf"><div class="menu__item desert-item">
+            <h3 class="menu_item-title">Десерты</h3>
           </div></a>
         </div>
       </section>
+      <section class="recomend">
+        <h2 class="recomend__title">Сегодня<br>Шеф-повар рекомендует!</h2>
+        <h3 class="recomend__dish">Rissoto</h3>
+        <div class="recomend__star-cost">
+          <img class="recomend__stars" src="./img/Group 53.svg" alt="Звезды">
+          <span class="recomend__price">2400₽</span>
+        </div>
+        <p class="recomend__description">Рис Арборио со сливками, заправленный смесью из лесных грибов, сыра пармезан и небольшого количества трюфельного масла. Это изысканное блюдо обещает удивительную симфонию вкусов, тщательно подобранную, чтобы сделать ваш ужин незабываемым. Погрузитесь во вкус Италии, по одной восхитительной ложечке за раз.</p>
+        <img class="recomend__ink" src="./img/Buon Appetito!.svg" alt="Бон аппетито!">
+        <div class="buy-buttons">
+          <a href=""><button class="button second-btn-buy btn-bgc-fill">Купить сейчас</button></a>
+          <a href=""><button class="button second-btn-more btn-bgc-transp">Узнать больше</button></a>
+        </div>
+        <img class="recomend_chef" src="./img/cooking-food-concept-smiling-female-chef-cook-baker-with-fork-tomato-showing-ok-sign 1.svg" alt="Шеф-повар">
+      </section>
+      <section class="event">
+        <h2 class="event__title">Событие приближается!</h2>
+        <div class="video-container">
+            <div id="player"></div> <!-- Контейнер для YouTube IFrame -->
+            <div class="overlay" id="overlay">
+                <h1 class="overlay__title">VERANDA ESTIVA<br>Ежегодное открытие летней веранды!</h1>
+                <div class="timer">
+                    <div class="timer-box">
+                        <span>8</span>
+                        <p>DAYS</p>
+                    </div>
+                    <div class="timer-box">
+                        <span>03</span>
+                        <p>HOURS</p>
+                    </div>
+                    <div class="timer-box">
+                        <span>30</span>
+                        <p>MINUTES</p>
+                    </div>
+                    <div class="timer-box">
+                        <span>12</span>
+                        <p>SECONDS</p>
+                    </div>
+                </div>
+                <button class="reserve-btn">Забронировать</button>
+            </div>
+    </section>
+    <footer class="footer">
+      <img src="./img/Logo.svg" alt="Логотип" class="footer__logo">
+      <div class="footer__container">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="" class="nav__link">Меню</a></li>
+          <li class="footer__item"><a href="" class="nav__link">События</a></li>
+          <li class="footer__item"><a href="" class="nav__link">О нас</a></li>
+          <li class="footer__item"><a href="" class="nav__link">Бронирование</a></li>
+          <li class="footer__item"><a href="" class="nav__link">Заказы</a></li>
+          <li class="footer__item"><a href="" class="nav__link">Наши контакты</a></li>
+        </ul>
+        <span class="footer__point">Дарить вкус Италии в каждом блюде, объединяя традиции и страсть.</span> 
+        <span class="shedule footeer__shd">Понедельник - Четверг: 11:30 - 23:00 | Пятница & Воскресенье: 11:30 - 00:00</span> 
+        <div class="footer-buttons">
+          <a href=""><button class="button main-btn btn-bgc-fill">Забронировать</button></a>
+          <a href=""><button class="button main-btn btn-bgc-transp">Наши контакты</button></a>
+        </div>
+        <span class="footer__copyright">Все права защищены 2024</span>
       </div>
+    </footer>
+      <!-- Подключаем YouTube IFrame API -->
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <script src="script.js"></script>
+      </section>
     </main>
   </body>
 </html>
