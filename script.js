@@ -1,7 +1,7 @@
 // Динамический таймер (опционально)
 document.addEventListener('DOMContentLoaded', () => {
     const timerBoxes = document.querySelectorAll('.timer-box span');
-    const endDate = new Date('2025-05-01T23:59:59').getTime();
+    const endDate = new Date('2025-06-01T23:59:59').getTime();
 
     const updateTimer = () => {
         const now = new Date().getTime();
