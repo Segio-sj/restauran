@@ -26,3 +26,41 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(updateTimer, 1000);
     updateTimer();
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const openBtns = document.querySelectorAll('.book-btn');
+    const modal    = document.getElementById('modal');
+    const closeBtn = document.querySelector('.modal-close');
+    const content  = document.querySelector('.modal-content');
+  
+    // Вешаем на каждую кнопку
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        modal.classList.add('show');
+      });
+    });
+  
+    // Закрытие по кресту
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('show');
+    });
+  
+    // Закрытие кликом по фону
+    modal.addEventListener('click', e => {
+      if (e.target === modal) {
+        modal.classList.remove('show');
+      }
+    });
+  
+    // Останавливаем всплытие внутри модалки
+    content.addEventListener('click', e => e.stopPropagation());
+  
+    // Отправка формы
+    document.getElementById('booking-form').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Спасибо! Ваша заявка отправлена.');
+      modal.classList.remove('show');
+      e.target.reset();
+    });
+  });
+  
